@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог країн</title>
+    <link rel="stylesheet" href="style (3).css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2>Каталог країн</h2>
+        <input type="text" id="search" placeholder="Пошук країни...">
+        <select id="continent">
+            <option value="">Всі континенти</option>
+            <option value="Europe">Європа</option>
+            <option value="Asia">Азія</option>
+            <option value="Africa">Африка</option>
+            <option value="Americas">Америка</option>
+            <option value="Oceania">Океанія</option>
+        </select>
+        <div id="countries-list">
+            <div class="country" data-continent="Europe">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAD1BMVEUAV7f/1wAAULuln3f/2wCAuqzxAAAAzUlEQVR4nO3QsQGAMAzAsBT4/2b2eO0onaAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACASx62ednmY5vD5qSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpH7zk2pa0LCuDAAAAABJRU5ErkJggg==" alt="Україна">
+                <span>Україна - Київ</span>
+            </div>
+            <div class="country" data-continent="Europe">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACnCAMAAAAPIrEmAAAAHlBMVEUAI5XtKTn///+qttz5ub5SW6rzb3r70NTEqsf4r7X1kzKGAAAAzUlEQVR4nO3PyRWAIBAFsGERpf+G6YH3vSUdpCpv9LjZ8n6Yq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq6urq1/Vn7zvjdsr7wCzuKqVC083sAAAAABJRU5ErkJggg==" alt="Франція">
+                <span>Франція - Париж</span>
+            </div><div class="country" data-continent="Europe">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=" alt="Німеччина">
+                <span>Німеччина - Берлін</span>
+            </div>
+            <div class="country" data-continent="Asia">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="Японія">
+                <span>Японія - Токіо</span>
+            </div>
+            <div class="country" data-continent="Africa">
+                <img src="data:image/png;base64,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" alt="Єгипет">
+                <span>Єгипет - Каїр</span>
+            </div>
+            <div class="country" data-continent="Americas">
+                <img src="data:image/png;base64,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" alt="США">
+                <span>США - Вашингтон</span>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
